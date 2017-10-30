@@ -1,0 +1,15 @@
+{
+  "name": "iot_isabell",
+  "version": "1.0.0",
+  "description": "IOT Isa-Bell",
+  "main": "app.js",
+  "scripts": {
+    "test": "app.js "
+  },
+  "author": "cgb",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.140.0",
+    "play-sound": "^1.1.1"
+  }
+}
