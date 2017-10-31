@@ -1,0 +1,5 @@
+{
+	"accessKeyId"			: "<your key here>", 
+	"secretAccessKey"		: "<your access key here>", 
+	"region" 				: "eu-west-1"
+}
