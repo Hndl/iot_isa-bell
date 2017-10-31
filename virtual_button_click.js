@@ -2,6 +2,7 @@
 
 
 const aws 		= require('aws-sdk');
+const path      = require('path');
 
 const util 		= require('util');
 
@@ -11,14 +12,11 @@ const LOG_ERR			=	1;
 const LOG_WAR			=	2;
 
 
-const SQS_OPTIONS		= 	{/* usr: iotButton *
-				"accessKeyId"			: "", 
-			 	"secretAccessKey"		: "", 
-			 	"region" 			: "eu-west-1"
-							};
+const AWS_CRED_FILE		= 'aws.cred.json';
+const SQS_OPTIONS		= aws.config.loadFromPath ( path.join('.',AWS_CRED_FILE));
 
 const SQS_RECEIVE_OPT	=	{
-								"QueueUrl"				: "https://sqs.eu-west-1.amazonaws.com/?/?",
+								"QueueUrl"				: "https://sqs.eu-west-1.amazonaws.com/381605567957/irl-iot-button-click",
       							"MaxNumberOfMessages"	: 1
 							};
 
