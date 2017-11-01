@@ -178,7 +178,7 @@ function receiveMessage() {
   	 	return; // go back to sleep
   	 } 
   	 if ((isTimeToWork(WorkingHours[0],WorkingHours[1]) === false)){
-  	 	util.log(`Not time to work yet ${nameOfToday()} @${WorkingHours[0]}-${WorkingHours[0]}`);
+  	 	util.log(`Not time to work yet ${nameOfToday()} @${WorkingHours[0]}-${WorkingHours[1]}`);
   	 	return; // go back to sleep
   	 }
   	 report_info(func,'query_sqs',SQS_RECEIVE_OPT.QueueUrl);
